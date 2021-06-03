@@ -1,7 +1,7 @@
 # drum-bateria
  simulador de bateria utilizando las teclas como notas musicales
- Para comenzar en el documento HTML, dentro de un div contenedor colocamos varios divs a los cuales se les asigna un data-key y una clase general, ademas de la etiqueta kbd que sirve para que el usuario sepa que tecla apretar y que sepa que sonido tiene asignado.
- 
+ Para comenzar, en el documento HTML, dentro de un div contenedor colocamos varios divs a los cuales se les asigna un data-key y una clase general, ademas de la etiqueta kbd que sirve para que el usuario sepa que tecla apretar y que con el nombre de la nota sepa que sonido tiene asignado. EL data-key que se le asignó se obtuvo de la pagina http://keycode.info/ que a cada tecla le asigna un valor. 
+ Si queres hacer algo como una key en el HTML, es conveniente usar data-key ya que linkea elementos por ejemplo en este repositorio las teclas y los sonidos correspondientes.
  
  <div class="keys">
         <div data-key="65" class="key"><kbd>A</kbd><span class="sound">clap</span></div>
@@ -14,6 +14,8 @@
         <div data-key="75" class="key"><kbd>K</kbd><span class="sound">tom</span></div>
         <div data-key="76" class="key"><kbd>L</kbd><span class="sound">tink</span></div>
         </div>
+ 
+ 
  
  
  function removeTransition(e) {
